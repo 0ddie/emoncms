@@ -1,2 +1,10 @@
 This is where we will implement the register module so when a node connects it will automatically 
 register to emoncms, it's Ip will be recorded in a MySQL database and it will be assigned a node ID.
+
+
+Todo-
+-Node initates a connection, emoncms saves IP to database. Maybe convert IP address to input then a feed using OEMan Attribute library code.
+-Generate Node ID for new node (Nothing developed basically from scratch)
+-Send Node ID back to node in correct format. 
+-Node sends in the packet with the type of attribute. Register module needs to assign the attributes to the correct
+Node ID and IP address and then make sure the next data recieved uses the feed module to post data to emoncms.
