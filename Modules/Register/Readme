@@ -1,2 +1,1 @@
-This is where we will implement the register module so when a node connects it will automatically register to emoncms, 
-It's Ip will be recorded in a MySQL database and it will be assigned a node ID.
+This is where we will implement the register module so when a node connects it will automatically register to emoncms, it's Ip will be recorded in a MySQL database and it will be assigned a node ID.
