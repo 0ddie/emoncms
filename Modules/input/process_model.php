@@ -153,6 +153,14 @@ class Process
         return $value + $arg;
     }
 
+    public function timeout($arg, $timeconnected, $timedout){
+        if ($timeconnected > 5000){
+            $timedout = true;
+        }
+
+        return $timedout;
+    }
+
     public function allowpositive($arg, $time, $value)
     {
         if ($value<0) $value = 0;
