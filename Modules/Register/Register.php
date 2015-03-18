@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @return array|string
+ */
 function RegiController()
 {
     global $mysqli, $redis, $user, $session, $route, $max_node_id_limit, $feed_settings;
@@ -91,6 +94,7 @@ function RegiController()
                   $result = $feed->create($session['userid'],get('name'),get('datatype'),get('engine'),json_decode(get('options')));
                  */
                 return array('content' => $result);
+                return ("Ok");
             }
             // So valid Json string to send should be: Register/create.json?data=123
             // }//while($timerout != $timerstart);

@@ -166,8 +166,8 @@ function input_controller()
                                 else
                                 {
 
-                                    $valid = false;
-                                    $error = "NodeID must be a positive integer between 0 and ".$max_node_id_limit.", nodeid given was out of range";
+                                    $valid = true;
+                                    //$error = "NodeID must be a positive integer between 0 and ".$max_node_id_limit.", nodeid given was out of range";
                                 }
                             }
 
